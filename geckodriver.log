@@ -397,3 +397,18 @@ KeyboardInterrupt
 1499024090428	Marionette	INFO	Listening on port 36798
 1499024090821	Marionette	WARN	TLS certificate errors will be ignored for this session
 1499024102750	Marionette	INFO	New connections will no longer be accepted
+1499031063208	geckodriver	INFO	Listening on 127.0.0.1:50660
+1499031064484	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1499031069756	Marionette	INFO	Listening on port 44956
+1499031069843	Marionette	WARN	TLS certificate errors will be ignored for this session
+1499031082250	Marionette	INFO	New connections will no longer be accepted
+1499031082522	geckodriver	INFO	Listening on 127.0.0.1:36724
+1499031083793	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1499031088677	Marionette	INFO	Listening on port 38671
+1499031089159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1499031091219	Marionette	INFO	New connections will no longer be accepted
+1499031091509	geckodriver	INFO	Listening on 127.0.0.1:47928
+1499031092782	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1499031097852	Marionette	INFO	Listening on port 44124
+1499031098662	Marionette	WARN	TLS certificate errors will be ignored for this session
+1499031110061	Marionette	INFO	New connections will no longer be accepted
