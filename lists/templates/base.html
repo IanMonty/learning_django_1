@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To-Do lists</title>
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <line href='/static/bases.css" rel=stylesheet">
+    <link href="/static/bases.css" rel="stylesheet">
   </head>
   <body>
     <div class="contrainer">
     
-      <div class="row>
-        <div class="col-md-6 col-md-offselt-3 jumbotron">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 jumbotron">
           <div class="text-center">
             <h1>{% block header_text %}{% endblock %}</h1>
             <form method="POST" action="{% block form_action %}{% endblock %}">
@@ -27,7 +27,7 @@
       </div>
       
       <div class="row">
-        <div class="col-md-6 cold-md-offset-3">
+        <div class="col-md-6 col-md-offset-3">
           {% block table %}
           {% endblock %}
         </div>

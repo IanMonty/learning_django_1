@@ -4,14 +4,18 @@ from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.keys import Keys
 import time
+import os
 
 MAX_WAIT = 10
 
 #class NewVisitorTest(LiveServerTestCase):
-class New VisitorTest(StaticLiveServerTestCase):
+class NewVisitorTest(StaticLiveServerTestCase):
     
     def setUp(self):
         self.browser = webdriver.Firefox()
+        staging_server = os.environ.get('STAGING_SERVER')
+        if staging_server:
+            self.live_server_url - 'http://' + staging_server
         
     def wait_for_row_in_list_table(self, row_text):
         start_time = time.time()
@@ -123,7 +127,7 @@ class New VisitorTest(StaticLiveServerTestCase):
         # she notices the input box is nicely centered
         inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertAlmostEqual(
-            inputbox.location['x'] + inputbox.size['width']/2,
+            inputbox.location['x'] + inputbox.size['width'] / 2,
             512,
             delta=10
         )
@@ -133,9 +137,9 @@ class New VisitorTest(StaticLiveServerTestCase):
         inputbox.send_keys('testing')
         inputbox.send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: testing')
-        input = self.browser.find_element_by_id('id_new_item')
+        inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertAlmostEqual(
-            inputbox.location['x'] + inputbox.size['width']/2,
+            inputbox.location['x'] + inputbox.size['width'] / 2,
             512,
             delta=10
         )
